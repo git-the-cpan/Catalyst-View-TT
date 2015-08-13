@@ -270,24 +270,7 @@ DESCRIPTION
   CAPTURING TEMPLATE OUTPUT
     If you wish to use the output of a template for some other purpose than
     displaying in the response, e.g. for sending an email, this is possible
-    using Catalyst::Plugin::Email and the render method:
-
-      sub send_email : Local {
-        my ($self, $c) = @_;
-
-        $c->email(
-          header => [
-            To      => 'me@localhost',
-            Subject => 'A TT Email',
-          ],
-          body => $c->view('Web')->render($c, 'email.tt', {
-            additional_template_paths => [ $c->config->{root} . '/email_templates'],
-            email_tmpl_param1 => 'foo'
-            }
-          ),
-        );
-      # Redirect or display a message
-      }
+    using other views, such as Catalyst::View::Email::Template.
 
   TEMPLATE PROFILING
     See "TIMER" property of the config method.

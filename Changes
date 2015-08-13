@@ -1,5 +1,9 @@
 Revision history for Perl extension Catalyst::View::TT.
 
+0.43 - 2015-08-13
+        - remove mention of deprecated Catalyst::Plugin::Email in
+          documentation
+
 0.42   2014-12-29
         - Fixes to test cases to be compatible with Catalyst v5.90080
         - Added a Unicode test designed to check new Catalyst function
