@@ -1,5 +1,8 @@
 Revision history for Perl extension Catalyst::View::TT.
 
+0.44 - 2015-10-05
+        - declare missing prereq on Data::Dump
+
 0.43 - 2015-08-13
         - remove mention of deprecated Catalyst::Plugin::Email in
           documentation

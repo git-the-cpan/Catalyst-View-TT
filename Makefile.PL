@@ -19,6 +19,7 @@ my %WriteMakefileArgs = (
         'Template::Timer'   => 0,
         'Path::Class'       => 0,
         'MRO::Compat'       => 0,
+        'Data::Dump'        => 0,
     },
     TEST_REQUIRES => {
         'Test::More'        => '0',
